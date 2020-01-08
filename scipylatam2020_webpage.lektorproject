@@ -1,0 +1,30 @@
+[project]
+name = scipyala2020_webpage
+url = http://conf.scipyla.org
+
+[packages]
+lektor-webpack-support = 0.5
+lektor-google-analytics = 0.1.3
+
+[alternatives.pt]
+name = Português
+primary = yes
+locale = pt
+
+[alternatives.es]
+name = Español
+url_prefix = /es/
+locale = es
+
+[alternatives.en]
+name = English
+url_prefix = /en/
+locale = en
+
+[servers.develop]
+name = Develop
+target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2020-develop?cname=develop.scipyla.org
+
+[servers.production]
+name = Production
+target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2020?cname=conf.scipyla.org

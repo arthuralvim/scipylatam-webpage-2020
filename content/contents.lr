@@ -1,0 +1,37 @@
+_template: home.html
+---
+_model: event
+---
+title: Bienvenido a SciPyLA 2019
+---
+menu_label: Inicio
+---
+date_end: 2019-10-10
+---
+date_start: 2019-10-08
+---
+body: Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente.
+---
+_slug: 
+---
+sections: 
+---
+description: Comparte experiencias sobre el uso de Python científico tanto académica como profesionalmente.
+---
+call_for_proposals: https://docs.google.com/forms/d/e/1FAIpQLSd9HVivE4bJKMqfi1jAD8SPBn-ra8kECMNpngBo1mziXtV-Nw/viewform
+---
+instagram: scipyla
+---
+twitter: scipyla
+---
+facebook: scipyla
+---
+linkedin: https://www.linkedin.com/company/scipy-latin-america/about
+---
+footer_menu: yes
+---
+cfp_due_date: 2019-08-30
+---
+tickets_link: https://forms.gle/5yx3sAGqTGgTsFAW7
+---
+order: 5

@@ -1,0 +1,35 @@
+_template: home.html
+---
+menu_label: Home
+---
+date_end: 2019-10-10
+---
+date_start: 2019-10-08
+---
+title: Welcome to SciPyLA 2019
+---
+body: Share experiences around the use of scientific Python academically and professionally.
+---
+_slug: 
+---
+call_for_proposals: https://docs.google.com/forms/d/e/1FAIpQLSd9HVivE4bJKMqfi1jAD8SPBn-ra8kECMNpngBo1mziXtV-Nw/viewform
+---
+description: Share experiences around the use of scientific Python academically and professionally.
+---
+facebook: https://www.facebook.com/scipyla/
+---
+instagram: https://www.instagram.com/scipyla/
+---
+linkedin: https://www.linkedin.com/company/scipy-latin-america/about/
+---
+sections: 
+---
+twitter: https://twitter.com/ScipyLA
+---
+cfp_due_date: 2019-08-08
+---
+footer_menu: yes
+---
+tickets_link: https://forms.gle/5yx3sAGqTGgTsFAW7
+---
+order: 5

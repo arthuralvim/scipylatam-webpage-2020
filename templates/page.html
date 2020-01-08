@@ -1,0 +1,14 @@
+{%- extends "layout.html" -%}
+{%- from "macros/translation.html" import transbag -%}
+
+{% block title %} {{ this.title }} | SciPyLA 2020 {% endblock %}
+
+{% block body %}
+{% include "parts/menu.html" %}
+<div class="container">
+  <main class="content">
+    {{ this.body }}
+  </main>
+</div>
+{% include "parts/footer.html" %}
+{% endblock %}

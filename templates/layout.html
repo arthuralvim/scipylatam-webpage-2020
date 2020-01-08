@@ -1,0 +1,54 @@
+{%- from "macros/translation.html" import transbag -%}
+{%- set event = site.get('/', alt=this.alt) -%}
+
+<!DOCTYPE html>
+<html lang="{{ this.alt }}">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="description" content="{{ this.title }}" />
+  {%- if this.redirect -%}<meta http-equiv="refresh" content="1; url={{ this.redirect }}">{%- endif %}
+  <link rel="canonical" href="{{ this|url(external=True) }}" />
+  <meta property="og:locale" content="{{ this.lang }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ this.title }}" />
+  <meta property="og:description" content="{{ this.title }}" />
+  <meta property="og:url" content="{{ this|url(alt=this.alt, external=True) }}" />
+  <meta property="og:site_name" content="ScipyLat 2020" />
+  <meta property="og:updated_time" content="2019-08-13T17:51:00+00:00" />
+
+  {%- block ogimage -%}
+  <meta property="og:image" content="{{ l_opimage }}" />
+  <meta property="og:image:secure_url" content="{{ l_opimage }}" />
+  <meta property="og:image:width" content="2400" />
+  <meta property="og:image:height" content="1260" />
+  {%- endblock %}
+
+  <!-- Favicon -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/static/favicon/apple-touch-icon.png'|asseturl }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/static/favicon/favicon-32x32.png'|asseturl }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/static/favicon/favicon-16x16.png'|asseturl }}">
+  <link rel="mask-icon" href="{{ '/static/favicon/safari-pinned-tab.svg'|asseturl }}" color="#5bbad5">
+
+  <title>{% block title %}{{ this.title }}{% endblock %}</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Poppins:300,500,700"rel="stylesheet"/>
+  <link rel="stylesheet" href="{{ '/static/gen/styles.css' | asseturl }}" />
+</head>
+
+<body>
+  {%- block body -%}
+  {% include "parts/menu.html" %}
+  {% include "parts/footer.html" %}
+  {%- endblock -%}
+  {% block bottom_scripts %}
+  <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
+  <!-- {%- if this.redirect -%} <script type=text/javascript charset="utf-8"> window.location = "{{ this.redirect }}"; </script> {%- endif -%} -->
+  {{ generate_google_analytics() }}
+  {% endblock %}
+</body>
+</html>
