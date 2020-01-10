@@ -23,7 +23,9 @@ locale = en
 
 [servers.develop]
 name = Develop
-target = ghpages+https://scipy-latinamerica/scipylatam-webpage-2020-develop?cname=develop.scipyla.org
+enabled = yes
+default = yes
+target = ghpages+https://arthuralvim/scipylatam-webpage-2020?cname=develop.scipyla.org
 
 [servers.production]
 name = Production

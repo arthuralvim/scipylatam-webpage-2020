@@ -42,8 +42,8 @@
 
 <body>
   {%- block body -%}
-  {% include "parts/menu.html" %}
-  {% include "parts/footer.html" %}
+  {% include "helpers/menu.html" %}
+  {% include "helpers/footer.html" %}
   {%- endblock -%}
   {% block bottom_scripts %}
   <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>

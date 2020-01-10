@@ -26,9 +26,6 @@
     "stylelint-webpack-plugin": "^0.10.1",
     "webpack": "^3.10.0"
   },
-  "resolutions": {
-    "**/**/fsevents": "^1.2.9"
-  },
   "dependencies": {
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",

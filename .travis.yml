@@ -1,0 +1,48 @@
+# travis-ci scipylatam-webpage-2020
+
+language: python
+
+python:
+  - 3.7
+
+before_install:
+  - curl -s -o $HOME/.nvm/nvm.sh https://raw.githubusercontent.com/creationix/nvm/v0.32.1/nvm.sh
+  - source $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - node --version
+  - yarn --version
+  - printenv | grep TRAVIS
+  - pip install pip==18.0
+  - pip install pipenv==2018.11.26
+  - pipenv install --system --dev
+  - make lektor_plugins
+  - yarn install --cwd "webpack" --ignore-engines
+
+script:
+  - make build
+
+deploy:
+  - provider: script
+    script: "make deploy.develop"
+    on:
+       branch: develop
+
+  - provider: script
+    script: "make deploy.production"
+    on:
+       branch: master
+
+after_failure:
+  - if [ -f log/tests.log ]; then cat log/tests.log && sleep 5; fi
+  - echo "== BUILD FAILED ==""
+
+after_success:
+  - echo "== BUILD OK ==""
+
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.cache/lektor/builds
+
+notifications:
+  email: false
