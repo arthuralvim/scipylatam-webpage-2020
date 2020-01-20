@@ -1,0 +1,51 @@
+#conference-navbar {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 22px;
+  min-height: 90px;
+
+  ul li {
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px;
+      transition: color 0.5s;
+    }
+
+    &:hover .underline {
+      background-color: white;
+      width: 100%;
+    }
+
+    &:hover a {  }
+
+    &:active a {
+        transition: none;
+        color: rgba(255,255,255,0.76);
+    }
+
+    &:active .underline {
+        transition: none;
+        background-color: rgba(255,255,255,0.76);
+    }
+
+    .underline {
+        height: 3px;
+        background-color: transparent;
+        width: 0%;
+        transition: width 0.2s, background-color 0.5s;
+        margin: 0 auto;
+    }
+
+  }
+
+  .active-link {
+      .underline {
+        width: 100%;
+        background-color: #fff;
+      }
+    }
+
+}

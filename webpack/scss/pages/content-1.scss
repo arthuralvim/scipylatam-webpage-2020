@@ -1,0 +1,129 @@
+#content-1 {
+
+  color: $content-1-text;
+  background-color: $content-1-bg;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 500px;
+  position: relative;
+  margin-bottom: 140px;
+
+
+  .header-space {
+    height: 200px;
+    width: 100%;
+  }
+
+  h1.header-box {
+    background-color: $content-1-header-text;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    color: #fff;
+    font: bold 60px Helvetica, Arial, Sans-Serif;
+    padding: 15px 50px 15px 200px;
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .keynote .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+  }
+  .keynote .icon-block a{
+      text-decoration:none;
+  }
+
+  .keynote i:hover {
+    background-color:#232323;
+    color:#fff;
+    text-decoration:none;
+  }
+
+  // &:after {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   height: 100%;
+  //   width: 200px;
+  //   background: url('/static/img/background-balls-1.svg?h=592995e8');
+  //   // background-size: auto 100%;
+  //   // background-repeat: no-repeat;
+  //   background-position: left;
+  //   border: 2px dashed #333;
+  // }
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   bottom: 0;
+  //   right: 0;
+  //   height: 100%;
+  //   width: 200px;
+  //   background: url('/static/img/background-balls-1.svg?h=592995e8');
+  //   // background-size: auto 100%;
+  //   // background-repeat: no-repeat;
+  //   background-position: left;
+  //   border: 2px dashed #333;
+  // }
+
+  .waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 75px;
+    width: 100%;
+    margin: -75px 0 0 0;
+    pointer-events: none;
+
+    .a { fill: none; }
+    .b { clip-path: url(#a); }
+    .c, .d { fill: $content-1-bg; }
+    .d { opacity: 0.5; isolation: isolate; }
+  }
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   background-image: linear-gradient(#ff9d2f, #ff6126);
+  //   height:0;
+  //   bottom: 0;
+  //   border-top: 300px solid transparent;
+  //   border-left: 60px solid transparent;
+  //   border-right: 60px solid transparent;
+  // }
+
+  #header-shape-gradient {
+    --color-stop: $content-1-bg;
+    --color-bot: #faed34;
+  }
+
+  .triangle-down {
+    position: absolute;
+    bottom: 0;
+    bottom: -100px;
+    height: 100px;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1;
+
+    svg {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+
+      .triangle-path{
+        fill: $content-1-bg;
+      }
+    }
+  }
+
+
+}
+
+

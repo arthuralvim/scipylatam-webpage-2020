@@ -1,0 +1,31 @@
+<section id="content-2">
+    <div class="mapa"></div>
+    <div class="container">
+        <div class="header-space">
+            <h1 class="header-box">Local</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-6">
+                {# <img src="holder.js/600x400?theme=sky&outline=yes" class="img-fluid"> #}
+
+                <ul class="polaroids" style="width: 280px;">
+                  {%- set cycling_list = cycler('left', 'right') -%}
+                  {%- for _ in range(3)  -%}
+                  <li>
+                    <a href="#" title="{{ cycling_list.next() }}">
+                      <img src="holder.js/300x200?theme=sky&outline=yes">
+                    </a>
+                  </li>
+                  {% endfor %}
+                </ul>
+
+            </div>
+            <div class="col-4 text-center">
+                <h1> Itaipava Armazém 14 </h1>
+                <p class="lead"> <strong>Av. Alfredo Lisboa, s/n </strong></p>
+                <p class="lead"> <strong>Recife - PE, Brasil </strong></p>
+                <button class="btn btn-primary">ACHAR NO GOOGLE MAPS!</button>
+            </div>
+        </div>
+    </div>
+</section>

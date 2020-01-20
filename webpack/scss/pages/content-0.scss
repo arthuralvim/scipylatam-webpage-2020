@@ -1,0 +1,36 @@
+#content-0 {
+
+  color: $content-0-text;
+  background-color: $content-0-bg;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 500px;
+  position: relative;
+
+  // &:before, &:after {
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 200px;
+    background: url('/static/img/brennand.svg?h=f43be31c');
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    &:before {
+      margin: 0 0 0 -100px;
+      left: 50%;
+      opacity: 0.5;
+    }
+  }
+
+  // &:after {
+  //   right: 0;
+  // }
+
+}
+

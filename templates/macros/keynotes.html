@@ -1,0 +1,34 @@
+{% macro render_keynote(keynote_name='', keynote_photo='', keynote_desc='',
+                        keynote_social=[], keynote_company='', left=True, alt='pt') %}
+<div class="row keynote justify-content-center justify-content-md-{%- if left -%}start{% else %}end{% endif %}">
+{%- if left -%}
+  <div class="col-9 col-md-3">
+    <img src="{{ keynote_photo|asseturl }}" class="avatar rounded-circle img-thumbnail" alt="avatar">
+    <p class="mt-3 w-100 float-left text-center"><strong>{{ keynote_company }}</strong></p>
+  </div>
+  <div class="col-9 col-md-6 text-md-left text-center">
+    <h1>{{ keynote_name }}</h1>
+    <p class="lead">{{ keynote_desc }}</p>
+    <div class="icon-block">
+    {% for name, link in keynote_social %}
+        <a href="{{ link }}" style="font-size: 2em; color: #fff;"><i class="fab fa-{{ name }}"></i></a>
+    {% endfor %}
+    </div>
+  </div>
+{% else %}
+  <div class="col-9 col-md-6 offset-md-3 text-md-left text-center">
+    <h1>{{ keynote_name }}</h1>
+    <p class="lead">{{ keynote_desc }}</p>
+    <div class="icon-block">
+    {% for name, link in keynote_social %}
+        <a href="{{ link }}" style="font-size: 2em; color: #fff;"><i class="fab fa-{{ name }}"></i></a>
+    {% endfor %}
+    </div>
+   </div>
+    <div class="col-9 col-md-3">
+      <img src="{{ keynote_photo|asseturl }}" class="avatar rounded-circle img-thumbnail" alt="avatar">
+      <p class="mt-3 w-100 float-left text-center"><strong>{{ keynote_company }}</strong></p>
+    </div>
+{%- endif -%}
+</div>
+{% endmacro %}

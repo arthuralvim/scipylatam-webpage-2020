@@ -1,0 +1,35 @@
+#footer-div {
+  padding-top: 120px;
+  color: $content-6-text;
+  background-color: $content-6-bg;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 500px;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -70px 0 0 -70px;
+    height: 140px;
+    width: 140px;
+    background: url('/static/img/scipy-logo.svg?h=530e27d0');
+    background-repeat: no-repeat;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -90px 0 0 -90px;
+    height: 180px;
+    width: 180px;
+    background-color: $content-6-bg;
+    border-radius: 100px;
+  }
+
+}
+

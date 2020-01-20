@@ -1,0 +1,11 @@
+{% macro render_sponsors(sponsor_logos=[]) %}
+<div class="row sponsors"></div>
+{% endmacro %}
+
+{% macro render_sponsor(sponsor_logo='') %}
+<div class="row sponsor">
+  <div class="col-1">
+    <img src="{{ sponsor_logo|asseturl }}" class="rounded-circle">
+  </div>
+</div>
+{% endmacro %}

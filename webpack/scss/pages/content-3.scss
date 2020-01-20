@@ -1,0 +1,133 @@
+#content-3-1 {
+  color: $content-3-text;
+  background-color: $content-3-bg;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 500px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    background-image: linear-gradient(#ff9d2f, #ff6126);
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+  }
+
+  .caranguejo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url('/static/img/caranguejo.svg?h=0ed9861c');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px dashed #333;
+  }
+
+}
+
+#content-3 {
+
+  padding: 30px;
+  color: $content-3-text;
+  background-color: $content-3-bg;
+  font-weight: bold;
+  font-size: 20px;
+  min-height: 500px;
+
+  .sponsor-manguebeat {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('/static/img/sponsor-background-manguebeat.svg?h=a2ebde32');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px dashed #333;
+
+    .sponsor-manguebeat-logo {
+      position: relative;
+      height: 250px;
+      width: 200px;
+      background: url('/static/img/sponsor-manguebeat.svg?h=ff659ff1');
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px dashed #333;
+    }
+  }
+
+  .sponsor-frevo {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('/static/img/sponsor-background-frevo.svg?h=337e074a');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px dashed #333;
+
+    .sponsor-frevo-logo {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      background: url('/static/img/sponsor-frevo.svg?h=aa71569d');
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px dashed #333;
+    }
+  }
+
+  .sponsor-passinho {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('/static/img/sponsor-background-passinho.svg?h=f7a0f0f8');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px dashed #333;
+
+    .sponsor-passinho-logo {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      background: url('/static/img/sponsor-passinho.svg?h=9068973c');
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px dashed #333;
+    }
+  }
+
+  .sponsor-coco {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: url('/static/img/sponsor-background-coco.svg?h=9b79967b');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px dashed #333;
+
+    .sponsor-coco-logo {
+      position: relative;
+      height: 200px;
+      width: 200px;
+      background: url('/static/img/sponsor-coco.svg?h=9b00c5fe');
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      border: 2px dashed #333;
+    }
+  }
+
+}
+

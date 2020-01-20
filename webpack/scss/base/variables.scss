@@ -1,0 +1,31 @@
+@media (min-width: 962px) {
+  .navbar {
+    height: 60px;
+    border-bottom: 5px solid rgba(#00061D, .3);
+  }
+
+  .navbar-bg-color {
+    color: #f8f8f8;
+    background-color: #00061D;
+  }
+
+}
+
+$navbar-light-color:                #f8f8f8 !default;
+$navbar-light-hover-color:          rgba(#f8f8f8, .7) !default;
+$navbar-light-active-color:         rgba(#f8f8f8, .9) !default;
+$navbar-light-disabled-color:       rgba(#f8f8f8, .3) !default;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: rgba(#f8f8f8, .1) !default;
+
+// $navbar-default-color: #f8f8f8 !default;
+// $navbar-default-border: #f8f8f8;
+
+// Navbar links
+// $navbar-default-link-color:                #777 !default;
+// $navbar-default-link-hover-color:          #333 !default;
+// $navbar-default-link-hover-bg:             transparent !default;
+// $navbar-default-link-active-color:         #555 !default;
+// $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+// $navbar-default-link-disabled-color:       #ccc !default;
+// $navbar-default-link-disabled-bg:          transparent !default;

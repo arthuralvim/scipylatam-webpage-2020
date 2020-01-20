@@ -1,0 +1,56 @@
+#header {
+  padding-top: 2px;
+  position: relative;
+
+  .scipy-header {
+    min-height: 400px;
+    width: 800px;
+    background: url('/static/img/scipy-header.svg?h=4aa6ad91');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-bottom: 120px;
+
+    .scipy-header-data {
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      margin: -175px 0 0 -175px;
+      height: 200px;
+      width: 350px;
+      background: url('/static/img/scipy-data-conference.svg?h=f266972a');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  #saiba-mais {
+    width: 75px;
+    height: 65px;
+    margin-bottom: 100px;
+
+    &:hover {
+      polygon {
+        fill: #22762E;
+        transition: all .2s ease-out;
+
+        &.arrow-bottom {
+          transform: translateY(-18px);
+        }
+
+        &.arrow-top {
+          transform: translateY(18px);
+        }
+      }
+    }
+
+  }
+    polygon {
+      fill: #22762E;
+      transition: all .2s ease-out;
+      &.arrow-middle { opacity: 0.75; }
+      &.arrow-top { opacity: 0.5 }
+    }
+}

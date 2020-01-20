@@ -6,7 +6,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  {# <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" /> #}
+  <meta name="viewport" content="width=1024">
   <meta name="format-detection" content="telephone=no" />
   <meta name="description" content="{{ this.title }}" />
   {%- if this.redirect -%}<meta http-equiv="refresh" content="1; url={{ this.redirect }}">{%- endif %}
@@ -40,13 +41,13 @@
   <link rel="stylesheet" href="{{ '/static/gen/styles.css' | asseturl }}" />
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbar-spy" data-offset="90">
   {%- block body -%}
   {% include "helpers/menu.html" %}
   {% include "helpers/footer.html" %}
   {%- endblock -%}
   {% block bottom_scripts %}
-  <script type=text/javascript src="{{ '/static/gen/app.js'|asseturl }}" charset="utf-8"></script>
+  <script type=text/javascript src="{{ '/static/gen/app.js' | asseturl }}" charset="utf-8"></script>
   <!-- {%- if this.redirect -%} <script type=text/javascript charset="utf-8"> window.location = "{{ this.redirect }}"; </script> {%- endif -%} -->
   {{ generate_google_analytics() }}
   {% endblock %}
