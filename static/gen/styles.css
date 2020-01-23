@@ -7800,6 +7800,20 @@ section {
     padding: 0;
     margin: 0; }
 
+.header-patrocinadores {
+  background-color: #6ACA9D;
+  color: #fff;
+  text-shadow: 1px 1px #309FEC, 2px 2px #309FEC, 3px 3px #309FEC; }
+  .header-patrocinadores:hover {
+    text-shadow: 1px 1px #309FEC, 2px 2px #309FEC, 3px 3px #309FEC, 4px 4px #309FEC, 5px 5px #309FEC, 6px 6px #309FEC; }
+  .header-patrocinadores span.underline {
+    display: block;
+    border: 3px solid #309FEC;
+    border-radius: 3px;
+    max-width: auto;
+    padding: 0;
+    margin: 0; }
+
 .header-ingressos {
   background-color: #0F6131;
   color: #fff;
@@ -7814,14 +7828,34 @@ section {
     padding: 0;
     margin: 0; }
 
+.header-sub-ingressos {
+  background-color: transparent;
+  color: #fff;
+  text-shadow: 1px 1px #0F6131, 2px 2px #0F6131, 3px 3px #0F6131; }
+  .header-sub-ingressos:hover {
+    text-shadow: 1px 1px #0F6131, 2px 2px #0F6131, 3px 3px #0F6131, 4px 4px #0F6131, 5px 5px #0F6131, 6px 6px #0F6131; }
+  .header-sub-ingressos span.underline {
+    display: block;
+    border: 3px solid #0F6131;
+    border-radius: 3px;
+    max-width: auto;
+    padding: 0;
+    margin: 0; }
+
 .header-box span.asterisk {
   vertical-align: sub; }
+
+.sub-header {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px;
+  margin: 25px 0; }
 
 .sponsor-title {
   display: block;
   line-height: normal;
   padding: 10px;
-  margin: 30px 0;
+  margin: 50px 0 20px;
   font-size: 25px;
   font-weight: 700;
   font-family: 'Roboto', sans-serif;
@@ -7832,6 +7866,10 @@ section {
 .sponsor-title-manguebeat {
   color: #6A3405;
   background-color: #E4AC10; }
+
+.sponsor-title-maracatu {
+  color: #218BBA;
+  background-color: #FFFFFF; }
 
 .sponsor-title-frevo {
   color: #DEBA0B;
@@ -8167,7 +8205,7 @@ section {
   font-size: 20px;
   min-height: 500px;
   position: relative;
-  padding: 0 0 200px; }
+  padding: 0 0 400px; }
   #content-2 .mapa {
     position: absolute;
     bottom: 0;
@@ -8175,7 +8213,7 @@ section {
     height: 100%;
     width: 100%;
     background: url("/static/img/mapa.svg?h=868a6fba");
-    background-size: auto 80%;
+    background-size: auto 65%;
     background-repeat: no-repeat;
     background-position: center; }
   #content-2 .local-info {
@@ -8225,24 +8263,33 @@ section {
       width: 300px; }
 
 #content-3 {
-  padding: 30px;
+  padding: 30px 0 200px;
   color: #000;
   font-weight: bold;
   font-size: 20px;
   min-height: 500px;
   position: relative;
+  z-index: 10;
   background: #2da4fd;
   background: linear-gradient(180deg, #2da4fd 0%, #64ceab 5%, #85d49f 10%, #d2e397 15%, #d2e397 100%); }
+  #content-3:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-bottom: 120px solid #FFEA29;
+    border-right: 98.8vw solid transparent; }
+  #content-3 .header-patrocinadores {
+    margin-top: 300px; }
   #content-3 .mangue {
     display: block;
     position: absolute;
-    top: -100px;
+    top: -50px;
     left: 50%;
     margin: -250px 0 0 -400px;
     height: 500px;
     width: 800px;
-    background-color: transparent;
-    border: 2px dashed #f90; }
+    background-color: transparent; }
     #content-3 .mangue .caranguejo {
       position: absolute;
       bottom: 0;
@@ -8254,84 +8301,39 @@ section {
       background: url("/static/img/caranguejo.svg?h=0ed9861c");
       background-size: auto 100%;
       background-repeat: no-repeat;
-      background-position: center;
-      border: 2px dashed #333; }
-  #content-3 .sponsor-manguebeat {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: url("/static/img/sponsor-background-manguebeat.svg?h=a2ebde32");
-    background-size: auto 100%;
+      background-position: center; }
+  #content-3 .sponsor-logo {
+    display: block;
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-position: center;
-    border: 2px dashed #333; }
-    #content-3 .sponsor-manguebeat .sponsor-manguebeat-logo {
-      position: relative;
-      height: 250px;
-      width: 200px;
-      background: url("/static/img/sponsor-manguebeat.svg?h=ff659ff1");
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 2px dashed #333; }
-    #content-3 .sponsor-manguebeat .sponsor-category-title {
-      color: #102e46; }
-  #content-3 .sponsor-frevo {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: url("/static/img/sponsor-background-frevo.svg?h=337e074a");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px dashed #333; }
-    #content-3 .sponsor-frevo .sponsor-frevo-logo {
-      position: relative;
-      height: 200px;
-      width: 200px;
-      background: url("/static/img/sponsor-frevo.svg?h=aa71569d");
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 2px dashed #333; }
-  #content-3 .sponsor-passinho {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: url("/static/img/sponsor-background-passinho.svg?h=f7a0f0f8");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px dashed #333; }
-    #content-3 .sponsor-passinho .sponsor-passinho-logo {
-      position: relative;
-      height: 200px;
-      width: 200px;
-      background: url("/static/img/sponsor-passinho.svg?h=9068973c");
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 2px dashed #333; }
-  #content-3 .sponsor-coco {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background: url("/static/img/sponsor-background-coco.svg?h=9b79967b");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 2px dashed #333; }
-    #content-3 .sponsor-coco .sponsor-coco-logo {
-      position: relative;
-      height: 200px;
-      width: 200px;
-      background: url("/static/img/sponsor-coco.svg?h=9b00c5fe");
-      background-size: auto 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-      border: 2px dashed #333; }
+    background-position: center; }
+  #content-3 .sponsor-logo-manguebeat {
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    background-image: url("/static/img/sponsor-manguebeat.svg?h=ff659ff1"); }
+  #content-3 .sponsor-logo-maracatu {
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url("/static/img/sponsor-maracatu.svg?h=f75b8218"); }
+  #content-3 .sponsor-logo-frevo {
+    height: 120px;
+    width: 120px;
+    background: url("/static/img/sponsor-frevo.svg?h=aa71569d"); }
+  #content-3 .sponsor-logo-passinho {
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+    background: url("/static/img/sponsor-passinho.svg?h=9068973c"); }
+  #content-3 .sponsor-logo-coco {
+    height: 120px;
+    width: 120px;
+    margin-right: 20px;
+    background: url("/static/img/sponsor-coco.svg?h=9b00c5fe"); }
   #content-3 ul.sponsors {
-    width: 100%;
+    max-width: 100%;
     display: inline-block;
     margin-top: 50px; }
     #content-3 ul.sponsors li {
@@ -8344,7 +8346,7 @@ section {
         -webkit-transform: rotate(-5deg);
         -moz-transform: rotate(-5deg);
         position: relative;
-        top: -15px; }
+        top: -10px; }
       #content-3 ul.sponsors li:nth-child(5n) a {
         -webkit-transform: rotate(5deg);
         -moz-transform: rotate(5deg);
@@ -8364,7 +8366,6 @@ section {
       float: left;
       margin: 0 0 27px 30px;
       width: auto;
-      padding: 10px 10px 15px;
       -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
       -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
       -webkit-transform: rotate(-2deg);
@@ -8378,14 +8379,14 @@ section {
       width: 300px; }
 
 #content-4 {
-  padding: 30px;
-  color: #000;
-  background-color: #D9E7A7;
+  padding-bottom: 200px;
+  color: #fff;
+  background-color: #FFEA29;
   font-weight: bold;
   font-size: 20px;
   min-height: 500px;
   position: relative; }
-  #content-4 .balls-1 {
+  #content-4 .balls {
     position: absolute;
     top: 0;
     right: 0;
@@ -8394,46 +8395,23 @@ section {
     background: url("/static/img/balls-2.svg?h=cff38f38");
     background-size: 100% auto;
     background-repeat: no-repeat;
-    border: 2px dashed #333; }
-  #content-4 .balls-2 {
-    position: absolute;
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg); }
+  #content-4 .balls-bottom-left {
+    top: auto;
     bottom: 0;
     left: 0;
-    height: 300px;
-    width: 300px;
     background: url("/static/img/balls-1.svg?h=9c7adf15");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    border: 2px dashed #333; }
-  #content-4 h4.title-text-shadow-2 {
-    color: white;
-    font: bold 24px Helvetica, Arial, Sans-Serif;
-    text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe;
-    -webkit-transition: all 0.12s ease-out;
-    -moz-transition: all 0.12s ease-out;
-    -o-transition: all 0.12s ease-out; }
-    #content-4 h4.title-text-shadow-2:hover {
-      text-shadow: 1px 1px #02a2fe, 2px 2px #02a2fe, 3px 3px #02a2fe, 4px 4px #02a2fe, 5px 5px #02a2fe, 6px 6px #02a2fe; }
-  #content-4 h1.title-text-shadow {
-    color: #fff;
-    font: bold 52px Helvetica, Arial, Sans-Serif;
-    text-shadow: 1px 1px 0 #82b383, 2px 2px 0 #82b383, 3px 3px 0 #82b383;
-    padding: 150px 0 5px; }
-    #content-4 h1.title-text-shadow:hover {
-      text-shadow: 1px 1px 0 #fe4902, 2px 2px 0 #fe4902, 3px 3px 0 #fe4902, 4px 4px 0 #fe4902, 5px 5px 0 #fe4902, 6px 6px 0 #fe4902; }
-    #content-4 h1.title-text-shadow span.underline {
-      display: block;
-      border: 3px solid #0F6131;
-      border-radius: 3px;
-      padding: 0;
-      margin: 0; }
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg); }
   #content-4 .ingresso {
-    font-family: Helvetica;
-    color: #0F6131;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #0F6131;
     text-align: center;
     vertical-align: middle;
     padding: 10px;
-    border: 4px solid #0F6131;
+    border: 4px solid #fff;
     border-radius: 10px;
     margin: 10px; }
     #content-4 .ingresso h1 {
@@ -8450,85 +8428,6 @@ section {
       font-weight: 500;
       font-size: 20px; }
 
-.card-pricing.popular {
-  z-index: 1;
-  border: 3px solid #007bff; }
-
-.card-pricing .list-unstyled li {
-  padding: .5rem 0;
-  color: #6c757d; }
-
-#content-5 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  color: #fff;
-  background-color: #FFEA29;
-  font-weight: bold;
-  font-size: 20px;
-  min-height: 500px;
-  position: relative; }
-  #content-5:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 0 0 0 -90px;
-    height: 90px;
-    width: 180px;
-    background-color: #D9E7A7;
-    border-bottom-right-radius: 90px;
-    border-bottom-left-radius: 90px; }
-  #content-5 .balls-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 300px;
-    width: 300px;
-    background: url("/static/img/balls-2.svg?h=cff38f38");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    border: 2px dashed #333; }
-  #content-5 .balls-2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 300px;
-    width: 300px;
-    background: url("/static/img/balls-1.svg?h=9c7adf15");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    border: 2px dashed #333; }
-  #content-5 .ingresso {
-    font-family: Helvetica;
-    color: #0F6131;
-    text-align: center;
-    vertical-align: middle;
-    padding: 10px;
-    border: 4px solid #0F6131;
-    border-radius: 10px;
-    margin: 10px; }
-    #content-5 .ingresso h1 {
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 25px;
-      padding: 5px;
-      margin: 0; }
-    #content-5 .ingresso .preco {
-      font-weight: bold;
-      font-size: 50px;
-      margin-bottom: 5px; }
-    #content-5 .ingresso .data {
-      font-weight: 500;
-      font-size: 20px; }
-
-.card-pricing.popular {
-  z-index: 1;
-  border: 3px solid #007bff; }
-
-.card-pricing .list-unstyled li {
-  padding: .5rem 0;
-  color: #6c757d; }
-
 #footer-div {
   padding-top: 120px;
   color: #fff;
@@ -8536,7 +8435,8 @@ section {
   font-weight: bold;
   font-size: 20px;
   min-height: 500px;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
   #footer-div:after {
     content: "";
     position: absolute;
