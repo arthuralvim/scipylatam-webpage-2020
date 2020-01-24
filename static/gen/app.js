@@ -24466,6 +24466,7 @@ __WEBPACK_IMPORTED_MODULE_0_jquery___default()(document).ready(function () { SIT
 var SITE = {
 
   init: function () {
+    this.go_to_top()
     this.scrollspy()
     this.menu_move()
     this.menu_sticky()
@@ -24496,6 +24497,7 @@ var SITE = {
     __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.to-top').on('click', function (e) {
       e.preventDefault()
       __WEBPACK_IMPORTED_MODULE_0_jquery___default()('html, body').animate({scrollTop: 0}, 2000)
+      console.log('subindo...')
     })
   },
 
