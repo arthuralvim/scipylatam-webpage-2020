@@ -8282,31 +8282,13 @@ a .btn-hehe {
 
 #content-1 {
   color: #fff;
-  background-color: #00061D;
   font-weight: bold;
   font-size: 20px;
   min-height: 500px;
   position: relative;
-  margin-bottom: 140px; }
-  #content-1 .balls {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 250px;
-    width: 250px;
-    background: url("/static/img/background-balls-1.svg?h=592995e8");
-    background-size: 100% auto;
-    background-repeat: no-repeat; }
-  #content-1 .balls-middle-left {
-    top: 50%;
-    bottom: 0;
-    left: 0;
-    background: url("/static/img/balls-1.svg?h=9c7adf15"); }
-  #content-1 .balls-bottom-right {
-    top: auto;
-    bottom: 0;
-    right: 0;
-    background: url("/static/img/balls-1.svg?h=9c7adf15"); }
+  margin-bottom: 140px;
+  background-image: url("/static/img/keynotes.png?h=2a5a2a0c");
+  background-size: cover; }
   #content-1 .keynote {
     margin-top: 50px; }
   #content-1 .keynote-photo {
